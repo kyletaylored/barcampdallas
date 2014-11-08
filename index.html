@@ -1,93 +1,427 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>BarCamp Dallas</title>
+  <meta name="author" content="BarCamp Dallas">
+  <meta name="keywords" content="barcamp, dallas, community, open source, technology, hardware, iot, web development, speaking, conference, un-conference">
+  <meta name="description" content="BarCamp is an ad-hoc unconference born from the desire for people to share and learn in an open environment. It is an intense event with discussions, demos">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Barcampdallas by kyletaylored</title>
-  </head>
+  <!--Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicons/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Barcampdallas</h1>
-        <h2>A static site for BarCamp Dallas.</h2>
-        <a href="https://github.com/kyletaylored/barcampdallas" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+  <!--styles -->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/barcamp.css">
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+  <!-- Google Fonts -->	
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+  <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+</head>
+<body data-spy="scroll" data-target=".navbar-custom">
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+  <!--Start Page loader -->
+  <div id="pageloader" style="display: none;">   
+    <div class="loader">
+      <img src="images/progress.gif" alt="loader">
+    </div>
+  </div>
+  <!--End Page loader -->
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+  <!--Start Slider -->
+  <section id="home">
+    <div class="slider-overlay"></div>
+    <div class="homeslider flexslider">
+      <ul class="slides">
+        <li class="slide1 bg" style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;"></li>
+        <li class="slide2 bg" style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;"></li>
+        <li class="slide3 bg flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;"></li>
+      </ul>
+      <ul class="flex-direction-nav flex-stay">
+        <li><a class="flex-prev" href="#"><i class="fa fa-chevron-left"></i></a></li>
+        <li><a class="flex-next" href="#"><i class="fa fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+    <!--/ homeslider-->
+    <!-- start text slider-->
+    <div class="tb">
+     <div class="tb-cell">
+      <div class="slide-text">
+       <div class="col-md-12 header-main">
+        <!-- <h2>BarCamp Dallas</h2> -->
+        <div class="header-image">
+          <img src="images/barcampdallas-alt.png" alt="BarCamp Dallas" />
+        </div>
+        <div class="header-social">
+         <ul>
+           <li><a href="http://facebook.com/barcampdallas"><i class="fa fa-facebook"></i></a></li>
+           <li><a href="http://twitter.com/barcampdallas"><i class="fa fa-twitter"></i></a></li>
+         </ul>
+       </div>
+       <!--  /.header-social-->
+       <div class="intro-btn-main page-scroll">
+         <a class="btn btn-primary" href="#about">what the hell is barcamp</a>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+<!--End Slider-->
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<!--Start Navigation-->
+<div id="navigation-sticky-wrapper" class="sticky-wrapper" style="height: 58px;">
+  <div id="navigation">
+   <nav class="navbar navbar-custom navbar-top" role="navigation">
+    <div class="container">
+     <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+       <i class="fa fa-bars"></i>
+     </button>
+   </div>
+   <div class="collapse navbar-collapse navbar-main-collapse">
+    <ul class="nav navbar-nav">
+      <li class="page-scroll"><a href="#home">Home</a></li>
+      <li class="page-scroll active"><a href="#about">About</a></li>
+      <li class="page-scroll"><a href="#topics">Topics</a></li>
+      <li class="page-scroll"><a href="#speakers">Speakers</a></li>
+      <li class="page-scroll"><a href="#testimonials">Testimonial</a></li>
+      <li class="page-scroll"><a href="#subscribe">Subscribe</a></li>
+    </ul>
+  </div>
+  <!-- /navbar-collapse -->
+</div>
+<!-- /container -->
+</nav>
+</div>
+</div>
+<!--End Navigation-->
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<!--Start about-->
+<section id="about" class="section">
+ <div class="container">
+   <div class="row">
+     <!--Start heading-->
+     <div class="section-heading"> <h2>About</h2> </div>
+     <!--End heading-->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+     <div class="col-md-12">
+      <div class="about-desc">
+       <p>Well, it's been a while hasn't it? We had so much fun growing, learning and connecting... why did we stop? Lets not try to worry about answering that question and maybe focus on something a bit more positive. How about we get back to work and rebuild an event like we did years ago. On board? Cool.</p>
+       <p><strong>For the noobs:</strong>BarCamp is an ad&#45;hoc unconference born from the desire for people to share and learn in an open environment. It is an intense event with discussions, demos, and interaction from attendees. (Read more, more, more)</p>
+       <p>
+        <ul>
+          <li><strong>Date:</strong> December 12 &amp; 13</li>
+          <li><strong>Where:</strong> Downtown Dallas (exact location TBD)</li>
+          <li><strong>Who:</strong> Anyone willing to share and learn (see list below for attendees)</li>
+        </ul>
+      </p>
+    </div>
+  </div> 
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+  <div class="clear"></div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+  <div class="barcamp-wrapper">
+   <div class="col-md-6">
+    <h3>What BarCamp is.</h3>
+    <ul>
+      <li>Cras mattis consectetur purus sit amet fermentum.</li>
+      <li>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</li>
+      <li>Nulla vitae elit libero, a pharetra augue.</li>
+    </ul>
+  </div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+  <div class="col-md-6 ">
+    <h3>What BarCamp isn't.</h3>
+    <ul>
+      <li>Cras mattis consectetur purus sit amet fermentum.</li>
+      <li>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</li>
+      <li>Nulla vitae elit libero, a pharetra augue.</li>
+    </ul>
+  </div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+</div>
+</div> <!-- /.row-->
+</div>
+</section> 
 
-        <aside id="sidebar">
-          <a href="https://github.com/kyletaylored/barcampdallas/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/kyletaylored/barcampdallas/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/kyletaylored/barcampdallas"></a> is maintained by <a href="https://github.com/kyletaylored">kyletaylored</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<section id="facts">
+ <div class="container">
+  <div class="section-heading">
+    <h2>BarCamp Facts</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 ">
+      <div class="facts-detail">
+        <i class="octicon octicon-organization"></i>
+        <span>200+</span>
+        <p>Attendees</p>
+      </div>          
     </div>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-56203917-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <div class="col-lg-3 col-md-3 col-sm-6 ">
+      <div class="facts-detail">
+        <i class="fa fa-coffee "></i>
+        <span>1.7k</span>
+        <p>Cups of Coffee</p>
+      </div>          
+    </div>
 
-  </body>
+    <div class="col-lg-3 col-md-3 col-sm-6 ">
+      <div class="facts-detail">
+        <i class="fa fa-beer"></i>
+        <span>2.8k</span>
+        <p>Rounds of Drinks</p>
+      </div>          
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 ">
+      <div class="facts-detail">
+        <i class="fa fa-money"></i>
+        <span>$0</span>
+        <p>Cost per attendee</p>
+      </div>          
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="been-awhile" class="section parallax" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-1500" style="background-image: url(images/been-awhile.jpg);">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 page-scroll">
+        <h1>We get it, it's been awhile. Carry on.</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="topics" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="section-heading"> <h2>Topics</h2></div>
+
+      <div class="col-md-3">
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="fa fa-money"></i>
+          </div>
+          <div class="service-box-info">
+            <h4>Entrepreneurship</h4>
+            <p>All the cool businessy stuff like finance, startups, investing, and marketing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="octicon octicon-terminal"></i>
+          </div>
+          <div class="service-box-info">
+            <h4>Coding</h4>
+            <p>We mean geeky shit like general development (web, mobile, etc). If you speak some of the following, it's probably for you.</p>
+            <p>
+              <ul>
+                <li>PHP / Python</li>
+                <li>Javascript / NodeJS</li>
+                <li>MySQL / MongoDB</li>
+                <li>Vagrant / Docker</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="octicon octicon-plug"></i>
+          </div>
+          <div class="service-box-info">
+            <h4>Maker Culture</h4>
+            <p>We want to hear about 3D printing, arduinos, remote&#45;controlled water fountains, and drones that can take our pets for a walk.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="fa fa-cloud-upload"></i>
+          </div>
+          <div class="service-box-info">
+            <h4>Internet of Things</h4>
+            <p>All things IoT. Connected cars, connected homes, general hacking of things.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="section section-more-padding parallax" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="0" style="background-image: url(images/talking.jpg);">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 page-scroll">
+        <blockquote class="align-right">
+          <h3>"He wrote j/k which i think is a color combination of some sort"</h3>
+          <h4>&#45; Brandon</h4>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="speakers" class="section-padding">
+  <div class="container">
+    <div class="row">
+     <!--Start heading-->
+     <div class="section-heading">
+      <h2>Speakers</h2>
+    </div>
+    <!--End heading-->
+    <div class="clear"></div>
+    <div class="col-md-12">
+      <!-- Change the width and height values to suit you best -->
+      <div class="typeform-widget" data-url="https://kyletaylor.typeform.com/to/thUMMw" data-text="Barcamp Dallas: Care to Talk?" style="width:100%;"></div>
+    </div>
+  </div>  <!-- /.row-->
+</div> <!-- /.container-->
+</section>
+
+<!--Start Testimonial-->
+<section id="testimonials" class="section section-white parallax" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="1250" style="background-image: url(images/testimonial.jpg);">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <!--Start heading-->
+      <div class="section-heading"> <h2>Interested now?</h2></div>
+      <!--End heading-->
+
+      <div class="col-md-8 col-md-offset-2">
+
+      </div>
+    </div> <!--/.row-->
+  </div> <!--/.container-->
+</section>
+<!--End Testimonial-->
+
+<!--Start contact-->
+<section id="contact" class="section">
+ <div class="container">
+   <div class="row">
+    <div class="section-heading">
+      <h2>Contact</h2>
+    </div>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup" class="col-md-6 contact-form">
+     <form action="http://kyletaylored.us3.list-manage.com/subscribe/post?u=ff0e891ecbf437502c8699cfd&amp;id=52d7df8b86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll" class="row">
+        <div class="col-md-6">
+          <input type="text" value="" name="FNAME" placeholder="First Name" class="form-control" id="mce-FNAME">
+        </div>
+        <div class="col-md-6">
+          <input type="text" value="" name="LNAME" placeholder="Last Name" class="form-control" id="mce-LNAME">
+        </div>
+        <div class="col-md-12">
+          <input type="email" value="" placeholder="Your Email" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+        </div>
+        <div id="mce-responses" class="clear col-md-12">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_ff0e891ecbf437502c8699cfd_52d7df8b86" tabindex="-1" value="">
+        </div>
+        <div class="clear col-md-12 text-right">
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg">Subscribe <i class="ion-paper-airplane"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <!--contact form-->
+  </div>
+
+  <!--
+  <div class="col-md-6 contact-address pull-right">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+   <p> <i class="fa fa-map-marker"></i>123, Lorem ipsum dolor sit amet,</p>
+   <p> <i class="fa fa-envelope"></i>barcampdallas.org</p>
+   <p> <i class="fa fa-phone"></i>(972) NO NUMBER</p>
+ </div> -->
+</div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="list-inline footer-social">
+         <li><a href="http://facebook.com/barcampdalas"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="http://twitter.com/barcampdallas"><i class="fa fa-twitter"></i></a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+</footer>
+
+<!-- Scroll top -->
+<a href="#" class="scrollup" style="display: inline;"> <i class="fa fa-chevron-up"> </i> </a>
+
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.0.6/jquery.browser.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="bower_components/sticky/jquery.sticky.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mixitup/1.5.6/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="js/min/barcamp-min.js"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+  var pageTracker = _gat._getTracker("UA-56203917-1");
+  pageTracker._trackPageview();
+} catch(err) {}
+</script>
+</body>
 </html>
