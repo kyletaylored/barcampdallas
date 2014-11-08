@@ -304,104 +304,38 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/about-me.png": {
+	"\/images\/barcampdallas-alt.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 306245,
-		"inputAbbreviatedPath": "\/images\/about-me.png",
-		"outputAbbreviatedPath": "\/images\/about-me.png",
+		"initialSize": 31271,
+		"inputAbbreviatedPath": "\/images\/barcampdallas-alt.png",
+		"outputAbbreviatedPath": "\/images\/barcampdallas-alt.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/images\/body-bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2281,
-		"inputAbbreviatedPath": "\/images\/body-bg.jpg",
-		"outputAbbreviatedPath": "\/images\/body-bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/cta-cv.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 190208,
-		"inputAbbreviatedPath": "\/images\/cta-cv.jpg",
-		"outputAbbreviatedPath": "\/images\/cta-cv.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/cta.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 190208,
-		"inputAbbreviatedPath": "\/images\/cta.jpg",
-		"outputAbbreviatedPath": "\/images\/cta.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/download-button.png": {
+	"\/images\/barcampdallas.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27151,
-		"inputAbbreviatedPath": "\/images\/download-button.png",
-		"outputAbbreviatedPath": "\/images\/download-button.png",
+		"initialSize": 31466,
+		"inputAbbreviatedPath": "\/images\/barcampdallas.png",
+		"outputAbbreviatedPath": "\/images\/barcampdallas.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
-	"\/images\/github-button.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1550,
-		"inputAbbreviatedPath": "\/images\/github-button.png",
-		"outputAbbreviatedPath": "\/images\/github-button.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/header-bg.jpg": {
+	"\/images\/been-awhile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9461,
-		"inputAbbreviatedPath": "\/images\/header-bg.jpg",
-		"outputAbbreviatedPath": "\/images\/header-bg.jpg",
+		"initialSize": 658942,
+		"inputAbbreviatedPath": "\/images\/been-awhile.jpg",
+		"outputAbbreviatedPath": "\/images\/been-awhile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/highlight-bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30991,
-		"inputAbbreviatedPath": "\/images\/highlight-bg.jpg",
-		"outputAbbreviatedPath": "\/images\/highlight-bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/sidebar-bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2270,
-		"inputAbbreviatedPath": "\/images\/sidebar-bg.jpg",
-		"outputAbbreviatedPath": "\/images\/sidebar-bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/slider\/barcamp-orlando.jpg": {
 		"fileType": 16384,
@@ -412,7 +346,18 @@
 		"outputAbbreviatedPath": "\/images\/slider\/barcamp-orlando.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/images\/slider\/dallas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 257961,
+		"inputAbbreviatedPath": "\/images\/slider\/dallas.jpg",
+		"outputAbbreviatedPath": "\/images\/slider\/dallas.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/images\/slider\/sticky-notes.jpg": {
 		"fileType": 16384,
@@ -423,7 +368,18 @@
 		"outputAbbreviatedPath": "\/images\/slider\/sticky-notes.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/images\/talking.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 699238,
+		"inputAbbreviatedPath": "\/images\/talking.jpg",
+		"outputAbbreviatedPath": "\/images\/talking.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/images\/testimonial.jpg": {
 		"fileType": 16384,
@@ -434,7 +390,7 @@
 		"outputAbbreviatedPath": "\/images\/testimonial.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -451,17 +407,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/barcamp.js",
 		"outputAbbreviatedPath": "\/js\/min\/barcamp-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/jquery.parallax.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/jquery.parallax.js",
-		"outputAbbreviatedPath": "\/js\/min\/jquery.parallax-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
