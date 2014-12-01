@@ -55,10 +55,8 @@ a {
 		text-decoration: none;
 	}
 }
-::selection {
-	color:white;
-}
-::-moz-selection {
+::selection, ::-moz-selection {
+	background-color: @primary;
 	color:white;
 }
 ::-webkit-input-placeholder {

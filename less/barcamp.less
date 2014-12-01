@@ -66,14 +66,111 @@ input[type="color"]:focus, .form-control:focus {
 	border-color:@primary !important;
 	color:@primary;
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-	background:white;
-	border-color:white !important;
-	color:@primary;
-	outline:none;
+.btn-primary {
+	background-color: @primary;
+	border-color: @primary;
+	color: white;
+	&:hover, &:active, &:focus {
+		background:darken(@primary, 10%);
+		border-color:darken(@primary, 10%);
+		color:white;
+		outline:none;
+	}
 }
 
-::selection, ::-moz-selection {
-	background:@primary;
-	color:white;
+.speaker-register {
+	margin-bottom: 2em;
+}
+#speakers-data {
+	.speaker {
+		// display: none;
+		img {
+			border: 10px solid rgba(red(@primary), green(@primary), blue(@primary), 0.75);
+			margin-bottom: 20px;
+			.transition;
+			&:hover {
+				border-color: rgba(red(@primary), green(@primary), blue(@primary), 0.95);
+				.transition;
+			}
+		}
+		.speaker-title {
+			font-size: 20px;
+			text-align: center;
+		}
+		.speaker-topic {
+			color: #444;
+			line-height: 1.1em;
+			font-size:16px;
+			text-align: center;
+		}
+		.speaker-twitter {
+			display: block;
+		}
+		.speaker-desc {
+			font-size:14px;
+			line-height: 1.5em;
+		}
+		.category {
+			margin-top: 1em;
+			width: 100%;
+			&:hover {
+				cursor: default;
+			}
+			&.entrepreneurship {
+				background-color: #449d44;
+				border-color: #449d44;
+			}
+			&.coding {
+				background-color: #444;
+				border-color: #444;
+			}
+			&.maker_culture {
+				background-color: #c9302c;
+				border-color: #c9302c;
+			}
+			&.iot {
+				background-color: #ec971f;
+				border-color: #ec971f;
+			}
+			span {
+				margin-left: 5px;
+				color: white;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+#location {
+	padding: 150px 0;
+	position: relative;
+	#googlemaps { 
+		height: 100%; 
+		width: 100%; 
+		position:absolute; 
+		top: 0; 
+		left: 0; 
+		z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+	}
+	#locationinfo {
+		position: absolute;
+		left: 15%;
+		top: 20%;
+	}
+}
+
+.modal-dialog {
+	height: 95%;
+}
+.modal-content {
+	height: 100%;
+}
+.modal-header {
+	height: 10%;
+}
+.modal-footer {
+	height: 10%;
+}
+.modal-body {
+	height: 80%;
 }
