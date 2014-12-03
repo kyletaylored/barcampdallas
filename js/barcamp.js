@@ -83,21 +83,8 @@ jQuery(document).ready(function($) {
 		$.each(json, function(index, val) {
 			$speakers.append(generateParticipant(val));
 		});
-		$(".speaker", $speakers).matchHeight();
+		window.setTimeout($(".speaker", $speakers).matchHeight(),1000);
 	});
-	// $speakers.mixItUp({
-	// 	load: {
-	// 		filter: "all",
-	// 	},
-	// 	animation: {
-	// 		enable: true,
-	// 		effects: "fade",
-	// 		animateChangeLayout: true,
-	// 	},
-	// 	layout: {
-	// 		display: "block",
-	// 	}
-	// });
 
 });
 
