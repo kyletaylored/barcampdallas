@@ -69,7 +69,6 @@ jQuery(document).ready(function($) {
 
 	// Register
 	var frameSrc = "http://register.barcampdallas.org/apply";
-
 	$('#openBtn').click(function(){
 		$('#myModal').on('show', function () {
 			$('iframe').attr("src",frameSrc);
@@ -79,12 +78,12 @@ jQuery(document).ready(function($) {
 
 	// Add speakers
 	var $speakers = $("#speakers-data");
-	$.getJSON("http://register.barcampdallas.org/barcamp_register/submissions.json", function(json) {
-		$.each(json, function(index, val) {
-			$speakers.append(generateParticipant(val));
-		});
-		window.setTimeout($(".speaker", $speakers).matchHeight(),1000);
-	});
+	// $.getJSON("http://register.barcampdallas.org/barcamp_register/submissions.json", function(json) {
+	// 	$.each(json, function(index, val) {
+	// 		$speakers.append(generateParticipant(val));
+	// 	});
+	// 	window.setTimeout($(".speaker", $speakers).matchHeight(),1000);
+	// });
 
 });
 
