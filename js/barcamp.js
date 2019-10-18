@@ -10,7 +10,7 @@
 // 	}
 // 	var title = $("<h4 />", {"class":"speaker-topic"}).html(obj.topic_title);
 // 	var desc = $("<p />", {"class":"speaker-desc"}).html(obj.topic_desc);
-	
+
 // 	var catIcon;
 // 	switch(obj.category) {
 // 		case "entrepreneurship":
@@ -28,7 +28,7 @@
 // 		case "iot":
 // 		catIcon = $("<i />", {"class": "fa fa-cloud-upload"}).append($("<span />").html("Internet of Things"));
 // 		break;
-		
+
 // 		case "other":
 // 		catIcon = $("<i />", {"class": "octicon octicon-package"}).append($("<span />").html("Other"));
 // 		break;
@@ -47,7 +47,7 @@
 // }
 
 jQuery(document).ready(function($) {
-	
+
 	// Page loader
 	$(".loader-item").delay(500).fadeOut();
 	$("#pageloader").delay(1000).fadeOut("slow");
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
 	$.stellar();
 
 	// Register
-	var frameSrc = "http://register.barcampdallas.org/apply";
+	var frameSrc = "https://register.barcampdallas.org/apply";
 	$('#openBtn').click(function(){
 		$('#myModal').on('show', function () {
 			$('iframe').attr("src",frameSrc);
